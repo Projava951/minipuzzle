@@ -30,6 +30,8 @@ public class User {
     @Column(length = 60)
     private String password;
 
+    private int score;
+
     private boolean enabled;
 
     @JsonBackReference
@@ -42,13 +44,14 @@ public class User {
     public User() {
     }
 
-    public User(String name, String surname, String username, String email, String password, boolean enabled) {
+    public User(String name, String surname, String username, String email, String password, boolean enabled, int score) {
         this.name = name;
         this.surname = surname;
         this.username = username;
         this.email = email;
         this.password = password;
         this.enabled = enabled;
+        this.score = score;
     }
 
     public User(String name, String surname, String username, String email,
@@ -124,5 +127,13 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
 }

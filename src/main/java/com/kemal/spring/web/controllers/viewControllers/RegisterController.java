@@ -70,9 +70,9 @@ public class RegisterController {
 
             emailService.sendEmail(registrationEmail);*/
 
-            modelAndView.addObject("confirmationMessage", "A confirmation e-mail has been sent to "
-                                    + userDto.getEmail());
-            modelAndView.setViewName("website/registered");
+//            modelAndView.addObject("confirmationMessage", "A confirmation e-mail has been sent to "
+//                                    + userDto.getEmail());
+            modelAndView.setViewName("website/login");
         }
 
         return modelAndView;

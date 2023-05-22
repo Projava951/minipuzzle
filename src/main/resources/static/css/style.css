@@ -9,8 +9,7 @@ body {
 }
 
 #home-section {
-	background: url("../images/keyboard.jpeg") no-repeat;
-	min-height: 700px;
+    height: '100%'
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -29,7 +28,6 @@ body {
 
 #navbar-home{
 	border-bottom:#008ed6 3px solid;
-	opacity:0.8;
 }
 
 #users-nav-item .nav-item{
@@ -147,3 +145,21 @@ footer {
 }
 /*================================================================*/
 /*endregion*/
+
+body {
+    font-family: 'Segoe UI', Calibri, Arial;
+    margin:0;
+}
+h2{
+    font-weight:normal;
+    text-align:center;
+}
+h3{
+    font-weight:normal;
+    margin:3px 0px;
+    text-align:center;
+}
+
+nav {
+    position: relative !important;
+}
