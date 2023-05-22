@@ -52,14 +52,14 @@ var imagePuzzle = {
         var percentage = 100 / (gridSize - 1);
         var image = images[Math.floor(Math.random() * images.length)];
 //        $('#imgTitle').html(image.title);
-        $('#actualImage').attr('src', image.src);
+        $('#actualImage').attr('src', '/' + image.src);
         $('#sortable').empty();
         let itemSize = $('#sortable').width() / gridSize;
         for (var i = 0; i < gridSize * gridSize; i++) {
             var xpos = (percentage * (i % gridSize)) + '%';
             var ypos = (percentage * Math.floor(i / gridSize)) + '%';
             var li = $('<li class="item" data-value="' + (i) + '"></li>').css({
-                'background-image': 'url(' + image.src + ')',
+                'background-image': 'url(/' + image.src + ')',
                 'background-size': (gridSize * 100) + '%',
                 'background-position': xpos + ' ' + ypos,
                 'width': itemSize + 'px',

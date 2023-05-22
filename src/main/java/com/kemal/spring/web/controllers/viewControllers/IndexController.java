@@ -28,6 +28,16 @@ public class IndexController {
         return "website/index";
     }
 
+    @GetMapping(value = {"/game/image-puzzle"})
+    public String imagePuzzle (){
+        return "website/image-puzzle";
+    }
+
+    @GetMapping(value = {"/game/memory"})
+    public String memory (){
+        return "website/memory";
+    }
+
     @GetMapping(value = "/login")
     public String login (){
         return "website/login";
