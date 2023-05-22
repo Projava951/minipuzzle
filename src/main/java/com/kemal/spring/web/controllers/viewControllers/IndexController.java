@@ -48,6 +48,10 @@ public class IndexController {
         return "website/tangram";
     }
 
+    @GetMapping(value = {"/game/mini-maze"})
+    public String miniMaze (){
+        return "website/mini-maze";
+    }
     @GetMapping(value = "/login")
     public String login (){
         return "website/login";
