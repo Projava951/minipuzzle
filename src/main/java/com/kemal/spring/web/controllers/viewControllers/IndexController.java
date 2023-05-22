@@ -43,6 +43,11 @@ public class IndexController {
         return "website/unblock-me";
     }
 
+    @GetMapping(value = {"/game/tangram"})
+    public String tangram (){
+        return "website/tangram";
+    }
+
     @GetMapping(value = "/login")
     public String login (){
         return "website/login";
