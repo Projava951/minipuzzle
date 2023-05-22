@@ -62,7 +62,6 @@ function showModal(title, content) {
     $("#myModal").modal();
 }
 $(document).on("click", "#send-score", function() {
-    console.log("asdfasdf");
     if ([[${#authorization.expression('isAuthenticated()')}]]) {
         $.get("/send-score?score=" + state.totalTime, function(res) {
             if (res) {

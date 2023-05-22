@@ -1,7 +1,7 @@
 ﻿
 var imagePuzzle = {
     stepCount: 0,
-    pass: 6,
+    pass: 1,
     images: [],
     gridSize: 6,
     startGame: function (images, gridSize) {

@@ -38,6 +38,11 @@ public class IndexController {
         return "website/memory";
     }
 
+    @GetMapping(value = {"/game/unblock-me"})
+    public String unblockMe (){
+        return "website/unblock-me";
+    }
+
     @GetMapping(value = "/login")
     public String login (){
         return "website/login";
