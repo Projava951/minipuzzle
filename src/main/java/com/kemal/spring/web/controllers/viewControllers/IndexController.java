@@ -52,6 +52,11 @@ public class IndexController {
     public String miniMaze (){
         return "website/mini-maze";
     }
+
+    @GetMapping(value = {"/game/connect"})
+    public String connect (){
+        return "website/connect";
+    }
     @GetMapping(value = "/login")
     public String login (){
         return "website/login";
